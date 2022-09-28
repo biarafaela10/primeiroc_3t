@@ -1,7 +1,7 @@
 # terceiro trimestre
 
-##identificaçao 
-  beatriz rafaela-numero:3 
+## identificaçao 
+  beatriz rafaela - numero:3 
   
-##conteudo
+## conteudo
 html,css e javascript
