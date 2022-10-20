@@ -31,15 +31,38 @@ function minhaTabuada(){
         document.write("O cubo  de " + i + " é " + i + " x " + i + "<br>"); 
 
      }
-  
+     function formatar(atual){
+        return atual.
+     }
      function mat(){
         let V = document.getElementById("valor").value;
         let j = document.getElementById("juros").value;
         let t = document.getElementById("meses").value;
+
+        if(Number)(V){
+            alert("o valor deve ser um numero");
+            document.getElementById("valor").value="";
+            document.getElementById("valor").focus();
+            return
+        }
+        if(Number)(j){
+            alert(" juros deve ser numero");
+            document.getElementById("juros").value="";
+            document.getElementById("juros").focus();
+            return
+        }
+        if(Number)(t){
+            alert("juros deve ser numero");
+            document.getElementById("meses").value="";
+            document.getElementById("meses").focus();
+            return
+
+
         let r=0;
         for(let i=1; i<=t; i++){
              r= v+(1+)(j/100);
              v=r;
+             document.write("Mes"+i+"="+r+"<br>");
 
         }
          document.write("Resultado "+ r);
