@@ -62,10 +62,11 @@ function minhaTabuada(){
         for(let i=1; i<=t; i++){
              r= v+(1+)(j/100);
              v=r;
-             document.write("Mes"+i+"="+r+"<br>");
+            // document.write("Mes"+i+"="+r+"<br>");
 
         }
-         document.write("Resultado "+ r);
+        document.getElementById("totalGeral").innerHTML="total :  " +moeda(r);
+        // cument.write("Resultado "+ moeda (r));
 
 
      }
