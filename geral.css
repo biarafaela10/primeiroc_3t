@@ -1,1 +1,39 @@
-
+#calculadora{
+    background-color: hsl(180, 94%, 49%);
+    width: 200px
+    padding; 20px;
+    border-radius : 10px
+}
+#calculadora input{
+    background-color: hsl(180, 17%, 91%);
+    color: rgb(10, 138, 145);
+    border-radius: 10px;
+    padding: 5px;
+}
+#calculadora button{
+    background-color: hsl(15, 83%, 84%);
+    color: cornsilk;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 10px;
+}
+#calculadora button:houver{
+    background-color: hsl(180, 100%, 27%);
+    color: rgb(142, 214, 142);
+    cursor: pointer;
+}
+#spTotal{
+    background-color: deeppink;
+    color: gainsboro;
+    border-radius: 10px;
+    padding: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+.splista{
+    background-color: ghostwhite;
+    border-radius: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: hotpink;
+    width: 200px;
+}
