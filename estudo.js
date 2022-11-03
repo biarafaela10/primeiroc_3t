@@ -70,6 +70,16 @@ function minhaTabuada(){
 
 
      }
+
+     function limpar(){
+        document.getElementById("mes").innerHTML=" "; 
+        document.getElementById("total").innerHTML="0,00 "; 
+        document.getElementById("valor").value=""
+        document.getElementById("juros").value=""
+         document.getElementById("meses").value=""
+     }
+
+
      function multiplicar(){
          let n1=document.getElementById("v1").value;
          let n2=document.getElementById("v2").value;

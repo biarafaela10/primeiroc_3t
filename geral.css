@@ -1,8 +1,13 @@
 #calculadora{
     background-color: hsl(180, 94%, 49%);
-    width: 200px
-    padding; 20px;
-    border-radius : 10px
+    width: 200px;
+    padding: 20px;
+    border-radius : 10px;
+    box-shadow: 10px 10x; color: black;
+    position:absolute;
+    left: 40%;
+    top: 10%;
+
 }
 #calculadora input{
     background-color: hsl(180, 17%, 91%);
