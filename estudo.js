@@ -16,87 +16,55 @@ function escreva(){
     
 }
 //for(inicio;validaçao: incremento)
-function minhaTabuada(){
-    for(let 1 = 5; i <=10; i++){
-    document.write((tabuada +" x " +i+"="+(tabuada*8)+"<br>"); 
-    for(let 1= 1; i <=10; j++)
-    document.write( i +" x "+j+"=" + "+(j+i)+"<br>");
-
-        document.write("<br>");
+function moeda(atual) {
+    return atual.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' });
+  }
+  
+  function total() {
+    let c = document.getElementById("valor").value;
+    let j = document.getElementById("juros").value;
+    let t = document.getElementById("meses").value;
+    let r = moeda;
+  
+  
+    if (!Number(c)) {
+  
+      alert("O capital deve ser numeros.");
+      document.getElementById("valor").value = "";
+      document.getElementById("valor").focus();
+      return;
     }
-
+  
+    if (!Number(j)) {
+      alert("O juros deve ser numeros.");
+      document.getElementById("juros").value = "";
+      document.getElementById("juros").focus();
+      return;
     }
-    function cubo(){
-     for(let i = 1; i <= 20; i++){
-        document.write("O cubo  de " + i + " é " + i + " x " + i + "<br>"); 
-
-     }
-     function formatar(atual){
-        return atual.
-     }
-     function mat(){
-        let V = document.getElementById("valor").value;
-        let j = document.getElementById("juros").value;
-        let t = document.getElementById("meses").value;
-
-        if(Number)(V){
-            alert("o valor deve ser um numero");
-            document.getElementById("valor").value="";
-            document.getElementById("valor").focus();
-            return
-        }
-        if(Number)(j){
-            alert(" juros deve ser numero");
-            document.getElementById("juros").value="";
-            document.getElementById("juros").focus();
-            return
-        }
-        if(Number)(t){
-            alert("juros deve ser numero");
-            document.getElementById("meses").value="";
-            document.getElementById("meses").focus();
-            return
-
-
-        let r=0;
-        for(let i=1; i<=t; i++){
-             r= v+(1+)(j/100);
-             v=r;
-            // document.write("Mes"+i+"="+r+"<br>");
-
-        }
-        document.getElementById("totalGeral").innerHTML="total :  " +moeda(r);
-        // cument.write("Resultado "+ moeda (r));
-
-
-     }
-
-     function limpar(){
-        document.getElementById("mes").innerHTML=" "; 
-        document.getElementById("total").innerHTML="0,00 "; 
-        document.getElementById("valor").value=""
-        document.getElementById("juros").value=""
-         document.getElementById("meses").value=""
-     }
-
-
-     function multiplicar(){
-         let n1=document.getElementById("v1").value;
-         let n2=document.getElementById("v2").value;
-         let n3=document.getElementById("v3").value;
-         let r=(Number)n1)+Number(n2)+ Number (n3))/3;
-         Document.getElementById("dividir")innerHTML="media:"+r;
-    
-         function dividir(){
-            let n1=document.getElementById("v1").value;
-            let n2=document.getElementById("v2").value;
-            let n3=document.getElementById("v3").value;
-            let r=(Number)n1)+Number(n2)+ Number (n3))/3;
-            Document.getElementById("multiplicar")innerHTML="media:"+r;
-       
-    
-    
-    
-
-     }
-
+  
+    if (!Number(t)) {
+      alert("O meses deve ser numeros.");
+      document.getElementById("meses").value = "";
+      document.getElementById("meses").focus();
+      return;
+    }
+    let mes = "";
+  
+    for (let i = 1; i <= t; i++) {
+      r = c * (1 + (j / 100));
+      mes += i + ": " + moeda(r) + "<br>";
+      //document.write("Mês " + i + " valor: " + moeda(r) + "<br>");
+      c = r;
+    }
+    document.getElementById("mes").innerHTML=mes; 
+    document.getElementById("total").innerHTML= moeda(r);
+    //document.write("Resultado: " + moeda(r));
+  }
+  
+  function limpar(){
+    document.getElementById("mes").innerHTML = "";
+    document.getElementById("total").innerHTML="0,00";
+    document.getElementById("valor").value = "";
+    document.getElementById("juros").value = "";
+    document.getElementById("meses").value = "";
+  }

@@ -42,12 +42,9 @@
     color: hotpink;
     width: 200px;
 }
-.calcf{
+.calcF{
     display:none;
 }
-#calcfin:checked +#calculadora .calcf {
+#calcFin:checked + #calculadora.calcF{
     display: block;
-}
-#calcfin{
-    display: none;
 }
