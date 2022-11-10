@@ -1,50 +1,60 @@
-#calculadora{
-    background-color: hsl(180, 94%, 49%);
+body {
+    background: hsl(160, 74%, 64%);
+}
+#calculadora {
+    background: hsl(0, 26%, 95%);
     width: 200px;
     padding: 20px;
-    border-radius : 10px;
-    box-shadow: 10px 10x; color: black;
-    position:absolute;
+    border-radius: 10px;
+    box-shadow: 10px 10px rgb(23, 23, 23);
+    position: absolute;
     left: 40%;
-    top: 10%;
-
+    top: 15%;
 }
-#calculadora input{
-    background-color: hsl(180, 17%, 91%);
-    color: rgb(10, 138, 145);
+#calculadora input {
+    background: hsl(172, 61%, 51%);
+    color: rgb(15, 14, 14);
     border-radius: 10px;
     padding: 5px;
 }
-#calculadora button{
-    background-color: hsl(15, 83%, 84%);
-    color: cornsilk;
+
+
+#calculadora input:focus{
+    background-color: hsl(0, 32%, 82%);
+    color: black;
+}
+#calculadora button {
+    background: hsl(170, 92%, 26%);
+    color: white;
     margin-top: 10px;
     padding: 5px;
     border-radius: 10px;
 }
-#calculadora button:houver{
-    background-color: hsl(180, 100%, 27%);
-    color: rgb(142, 214, 142);
+#calculadora button:hover{
+    background: hsl(197, 91%, 27%);
+    color: rgb(238, 230, 230);
     cursor: pointer;
 }
-#spTotal{
-    background-color: deeppink;
-    color: gainsboro;
+#sptotal {
+    background: hsl(197, 91%, 46%);
+    color: rgb(255, 255, 255);
     border-radius: 10px;
     padding: 5px;
     font-family: 'Courier New', Courier, monospace;
-    
 }
-.splista{
-    background-color: ghostwhite;
+.spLista {
+    background: hsl(184, 90%, 45%);
     border-radius: 10px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: hotpink;
+    color: hsl(180, 26%, 93%);
     width: 200px;
 }
-.calcF{
-    display:none;
+.calcF {
+    display: none;
 }
-#calcFin:checked + #calculadora.calcF{
+#calcFin:checked + #calculadora .calcF {
     display: block;
+}
+#calcFin {
+    display: none;
 }

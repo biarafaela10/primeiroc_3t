@@ -1,49 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primeiro c</title>
-    <script src="estudo.js"></script>
-    <link rel="stylesheet" href="geral.css">
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Primeiro C</title>
+   <script src="estudo.js"></script>
+   <link rel="stylesheet" href="geral.css">
 </head>
 
 <body>
+   <input type="checkbox" name="" id="calcFin">
 
-    <input type="checkbox" id="calcFin">
-    <div id="calculadora">
-    <label for="calcFin"><h3>financeira</h3></label>
-    <div class="calcF">
-    <div id="sptotal">
-       <span id="total">total:0,00</span><br>
-    </div>
-
-   Capital:<input id="valor" placeholder="R$" type="text"><br>
-   Juros(Mensais): <input id="Juros"placeholder="% mes" type="text"><br>
-   Nr. Meses:<input  id="Meses" type="text"><br>
-    <button onclick="total()">calcula</button>
-    <button onclick="limpar()">limpar</button>
-    <div class="splista">
-      <span id="mes"></span>
-    </div>
-  </div>
-    </div>
-    <div>
-
-
-<br><br><br><br>
-<span id="resultado">0,00</span>
-Valor 1:<input id="v1" type="text"><br>
-Valor 2:<input id="v2" type="text"><br>
-Valor 3:<input id="v3" type="text"><br>
-
-
-<button onclick="divisao">Calcular a media</button>
-<button onclick="soma">Calcular a media</button>
-
-
+   <div id="calculadora">
+      <label for="calcFin">
+         <h3>Financeiro</h3>
+      </label>
+      <div class="calcF">
+         <div id="sptotal">
+            <span id="total">Total: 0,00</span><br>
+         </div>
+         Capital: <input id="valor" type="text"> <br>
+         Juros Mensais: <input id="juros" type="text"> <br>
+         Nr. de Meses: <input id="meses" type="text"> <br>
+         <button onclick="total()">Calcula</button>
+      </div>
+      <div class="splista">
+         <span id="mes"></span>
+      </div>
+      </div>
+   </div>
 
 </body>
-<html>
 
+</html>
